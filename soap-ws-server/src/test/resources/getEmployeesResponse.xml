@@ -1,0 +1,8 @@
+<getEmployeesResponse xmlns="http://kp.com/ws">
+	<employees>
+		<id>1</id>
+		<firstName>F-N-a-m-e-01</firstName>
+		<lastName>L-N-a-m-e-01</lastName>
+		<title>Manager</title>
+	</employees>
+</getEmployeesResponse>

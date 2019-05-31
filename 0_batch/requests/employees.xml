@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gs="http://kp.com/ws">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gs:getEmployeesRequest>
+         <gs:departmentName>N-a-m-e-01</gs:departmentName>
+         <gs:employeeLastName>L-N-a-m-e-01</gs:employeeLastName>
+      </gs:getEmployeesRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

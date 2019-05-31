@@ -1,0 +1,3 @@
+<getDepartmentsRequest xmlns='http://kp.com/ws'>
+	<departmentName>N-a-m-e-01</departmentName>
+</getDepartmentsRequest>

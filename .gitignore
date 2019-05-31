@@ -1,0 +1,12 @@
+.settings/
+.project
+docs/apidocs
+soap-ws-client/.settings
+soap-ws-client/target
+soap-ws-client/.classpath
+soap-ws-client/.project
+soap-ws-server/.settings
+soap-ws-server/target
+soap-ws-server/.classpath
+soap-ws-server/.project
+target

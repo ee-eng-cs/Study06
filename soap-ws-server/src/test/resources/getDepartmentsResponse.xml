@@ -1,0 +1,24 @@
+<getDepartmentsResponse xmlns="http://kp.com/ws">
+	<departments>
+		<id>1</id>
+		<name>N-a-m-e-01</name>
+		<employees>
+			<id>1</id>
+			<firstName>F-N-a-m-e-01</firstName>
+			<lastName>L-N-a-m-e-01</lastName>
+			<title>Manager</title>
+		</employees>
+		<employees>
+			<id>2</id>
+			<firstName>F-N-a-m-e-02</firstName>
+			<lastName>L-N-a-m-e-02</lastName>
+			<title>Analyst</title>
+		</employees>
+		<employees>
+			<id>3</id>
+			<firstName>F-N-a-m-e-03</firstName>
+			<lastName>L-N-a-m-e-03</lastName>
+			<title>Developer</title>
+		</employees>
+	</departments>
+</getDepartmentsResponse>

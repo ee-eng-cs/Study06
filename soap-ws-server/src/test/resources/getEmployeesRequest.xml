@@ -1,0 +1,4 @@
+<getEmployeesRequest xmlns='http://kp.com/ws'>
+	<departmentName>N-a-m-e-01</departmentName>
+	<employeeLastName>L-N-a-m-e-01</employeeLastName>
+</getEmployeesRequest>

@@ -1,0 +1,85 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://kp.com/ws" targetNamespace="http://kp.com/ws"
+	elementFormDefault="qualified">
+
+	<xs:element name="getCompanyRequest">
+		<xs:complexType>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getCompanyResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="company" type="tns:company" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getDepartmentsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="departmentName" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getDepartmentsResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="departments" type="tns:department"
+					minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getEmployeesRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="departmentName" type="xs:string" />
+				<xs:element name="employeeLastName" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getEmployeesResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="employees" type="tns:employee"
+					minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="company">
+		<xs:sequence>
+			<xs:element name="departments" type="tns:department"
+				minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="department">
+		<xs:sequence>
+			<xs:element name="id" type="xs:int" />
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="employees" type="tns:employee"
+				minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="employee">
+		<xs:sequence>
+			<xs:element name="id" type="xs:int" />
+			<xs:element name="firstName" type="xs:string" />
+			<xs:element name="lastName" type="xs:string" />
+			<xs:element name="title" type="tns:title" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="title">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Manager" />
+			<xs:enumeration value="Analyst" />
+			<xs:enumeration value="Developer" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
